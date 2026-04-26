@@ -1,0 +1,138 @@
+{
+  "seed": 42,
+  "n_detected": 13,
+  "n_type_correct": 12,
+  "n_recovered": 11,
+  "results": [
+    {
+      "ft": "DL-1",
+      "detected": true,
+      "detected_as": "DL-1",
+      "correct": true,
+      "rca_ok": true,
+      "rca_conf": 0.0,
+      "rec": true,
+      "lat": 194.27
+    },
+    {
+      "ft": "DL-2",
+      "detected": true,
+      "detected_as": "DL-2",
+      "correct": true,
+      "rca_ok": true,
+      "rca_conf": 0.0,
+      "rec": true,
+      "lat": 78.12
+    },
+    {
+      "ft": "DL-3",
+      "detected": true,
+      "detected_as": "DL-3",
+      "correct": true,
+      "rca_ok": true,
+      "rca_conf": 0.0,
+      "rec": false,
+      "lat": 117.55
+    },
+    {
+      "ft": "DL-4",
+      "detected": true,
+      "detected_as": "DL-4",
+      "correct": true,
+      "rca_ok": true,
+      "rca_conf": 0.0,
+      "rec": true,
+      "lat": 93.66
+    },
+    {
+      "ft": "DL-5",
+      "detected": true,
+      "detected_as": "DL-5",
+      "correct": true,
+      "rca_ok": true,
+      "rca_conf": 0.0,
+      "rec": true,
+      "lat": 107.9
+    },
+    {
+      "ft": "ML-1",
+      "detected": true,
+      "detected_as": "ML-1",
+      "correct": true,
+      "rca_ok": false,
+      "rca_conf": 0.336,
+      "rec": false,
+      "lat": 224.37
+    },
+    {
+      "ft": "ML-3",
+      "detected": true,
+      "detected_as": "ML-3",
+      "correct": true,
+      "rca_ok": false,
+      "rca_conf": 0.334,
+      "rec": true,
+      "lat": 176.75
+    },
+    {
+      "ft": "ML-4",
+      "detected": true,
+      "detected_as": "ML-4",
+      "correct": true,
+      "rca_ok": false,
+      "rca_conf": 0.334,
+      "rec": true,
+      "lat": 302.62
+    },
+    {
+      "ft": "IL-1",
+      "detected": true,
+      "detected_as": "IL-1",
+      "correct": true,
+      "rca_ok": false,
+      "rca_conf": 0.99,
+      "rec": true,
+      "lat": 196.07
+    },
+    {
+      "ft": "IL-2",
+      "detected": true,
+      "detected_as": "IL-2",
+      "correct": true,
+      "rca_ok": false,
+      "rca_conf": 0.99,
+      "rec": true,
+      "lat": 322.6
+    },
+    {
+      "ft": "IL-3",
+      "detected": true,
+      "detected_as": "IL-3",
+      "correct": true,
+      "rca_ok": false,
+      "rca_conf": 0.99,
+      "rec": true,
+      "lat": 217.34
+    },
+    {
+      "ft": "IL-4",
+      "detected": true,
+      "detected_as": "DL-1",
+      "correct": false,
+      "rca_ok": false,
+      "rca_conf": 0.99,
+      "rec": true,
+      "lat": 182.72
+    },
+    {
+      "ft": "IL-5",
+      "detected": true,
+      "detected_as": "IL-5",
+      "correct": true,
+      "rca_ok": false,
+      "rca_conf": 0.99,
+      "rec": true,
+      "lat": 321.99
+    }
+  ]
+}

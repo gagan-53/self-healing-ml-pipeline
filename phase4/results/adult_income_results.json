@@ -1,0 +1,14 @@
+{
+  "DL-1": {
+    "detected": true,
+    "detected_as": "DL-1",
+    "correct": true,
+    "note": "Age distribution covariate shift detected via PSI. CI correct."
+  },
+  "DL-3": {
+    "detected": true,
+    "detected_as": "DL-1",
+    "correct": false,
+    "note": "Prediction histogram shift fires DL-1 PSI before DL-3 JS-divergence. DL-3 requires sustained 5-cycle label injection on same stage. System detects the drift (correct recovery) but type label is DL-1."
+  }
+}

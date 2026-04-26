@@ -1,0 +1,228 @@
+{
+  "results": [
+    {
+      "seed": 123,
+      "fault_type": "DL-1",
+      "detected": false,
+      "correct_type": false,
+      "rca_correct": false,
+      "recovery_success": false
+    },
+    {
+      "seed": 123,
+      "fault_type": "DL-2",
+      "detected": true,
+      "correct_type": true,
+      "rca_correct": true,
+      "recovery_success": true
+    },
+    {
+      "seed": 123,
+      "fault_type": "DL-3",
+      "detected": false,
+      "correct_type": false,
+      "rca_correct": false,
+      "recovery_success": false
+    },
+    {
+      "seed": 123,
+      "fault_type": "DL-4",
+      "detected": false,
+      "correct_type": false,
+      "rca_correct": false,
+      "recovery_success": false
+    },
+    {
+      "seed": 123,
+      "fault_type": "DL-5",
+      "detected": false,
+      "correct_type": false,
+      "rca_correct": false,
+      "recovery_success": false
+    },
+    {
+      "seed": 123,
+      "fault_type": "ML-1",
+      "detected": true,
+      "correct_type": true,
+      "rca_correct": false,
+      "recovery_success": true
+    },
+    {
+      "seed": 123,
+      "fault_type": "ML-2",
+      "detected": false,
+      "correct_type": false,
+      "rca_correct": false,
+      "recovery_success": false
+    },
+    {
+      "seed": 123,
+      "fault_type": "ML-3",
+      "detected": false,
+      "correct_type": false,
+      "rca_correct": false,
+      "recovery_success": false
+    },
+    {
+      "seed": 123,
+      "fault_type": "ML-4",
+      "detected": false,
+      "correct_type": false,
+      "rca_correct": false,
+      "recovery_success": false
+    },
+    {
+      "seed": 123,
+      "fault_type": "IL-1",
+      "detected": true,
+      "correct_type": true,
+      "rca_correct": false,
+      "recovery_success": true
+    },
+    {
+      "seed": 123,
+      "fault_type": "IL-2",
+      "detected": true,
+      "correct_type": true,
+      "rca_correct": false,
+      "recovery_success": true
+    },
+    {
+      "seed": 123,
+      "fault_type": "IL-3",
+      "detected": false,
+      "correct_type": false,
+      "rca_correct": false,
+      "recovery_success": false
+    },
+    {
+      "seed": 123,
+      "fault_type": "IL-4",
+      "detected": false,
+      "correct_type": false,
+      "rca_correct": false,
+      "recovery_success": false
+    },
+    {
+      "seed": 123,
+      "fault_type": "IL-5",
+      "detected": false,
+      "correct_type": false,
+      "rca_correct": false,
+      "recovery_success": false
+    },
+    {
+      "seed": 999,
+      "fault_type": "DL-1",
+      "detected": false,
+      "correct_type": false,
+      "rca_correct": false,
+      "recovery_success": false
+    },
+    {
+      "seed": 999,
+      "fault_type": "DL-2",
+      "detected": true,
+      "correct_type": true,
+      "rca_correct": true,
+      "recovery_success": false
+    },
+    {
+      "seed": 999,
+      "fault_type": "DL-3",
+      "detected": false,
+      "correct_type": false,
+      "rca_correct": false,
+      "recovery_success": false
+    },
+    {
+      "seed": 999,
+      "fault_type": "DL-4",
+      "detected": false,
+      "correct_type": false,
+      "rca_correct": false,
+      "recovery_success": false
+    },
+    {
+      "seed": 999,
+      "fault_type": "DL-5",
+      "detected": false,
+      "correct_type": false,
+      "rca_correct": false,
+      "recovery_success": false
+    },
+    {
+      "seed": 999,
+      "fault_type": "ML-1",
+      "detected": true,
+      "correct_type": true,
+      "rca_correct": false,
+      "recovery_success": true
+    },
+    {
+      "seed": 999,
+      "fault_type": "ML-2",
+      "detected": false,
+      "correct_type": false,
+      "rca_correct": false,
+      "recovery_success": false
+    },
+    {
+      "seed": 999,
+      "fault_type": "ML-3",
+      "detected": true,
+      "correct_type": false,
+      "rca_correct": false,
+      "recovery_success": true
+    },
+    {
+      "seed": 999,
+      "fault_type": "ML-4",
+      "detected": false,
+      "correct_type": false,
+      "rca_correct": false,
+      "recovery_success": false
+    },
+    {
+      "seed": 999,
+      "fault_type": "IL-1",
+      "detected": true,
+      "correct_type": true,
+      "rca_correct": false,
+      "recovery_success": true
+    },
+    {
+      "seed": 999,
+      "fault_type": "IL-2",
+      "detected": true,
+      "correct_type": false,
+      "rca_correct": false,
+      "recovery_success": true
+    },
+    {
+      "seed": 999,
+      "fault_type": "IL-3",
+      "detected": false,
+      "correct_type": false,
+      "rca_correct": false,
+      "recovery_success": false
+    },
+    {
+      "seed": 999,
+      "fault_type": "IL-4",
+      "detected": false,
+      "correct_type": false,
+      "rca_correct": false,
+      "recovery_success": false
+    },
+    {
+      "seed": 999,
+      "fault_type": "IL-5",
+      "detected": false,
+      "correct_type": false,
+      "rca_correct": false,
+      "recovery_success": false
+    }
+  ]
+}

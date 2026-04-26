@@ -1,0 +1,103 @@
+{
+  "DL-2": {
+    "n_ok": 18,
+    "n_total": 20,
+    "rate": 0.9,
+    "ci_lower": 0.699,
+    "ci_upper": 0.972
+  },
+  "ML-1": {
+    "n_ok": 17,
+    "n_total": 20,
+    "rate": 0.85,
+    "ci_lower": 0.64,
+    "ci_upper": 0.948
+  },
+  "IL-1": {
+    "n_ok": 10,
+    "n_total": 10,
+    "rate": 1.0,
+    "ci_lower": 0.722,
+    "ci_upper": 1.0
+  },
+  "DL-1": {
+    "n_ok": 3,
+    "n_total": 3,
+    "rate": 1.0,
+    "ci_lower": 0.43,
+    "ci_upper": 1.0,
+    "note": "from_rq1_seed42_3seed_extrapolation"
+  },
+  "DL-3": {
+    "n_ok": 1,
+    "n_total": 3,
+    "rate": 0.33,
+    "ci_lower": 0.01,
+    "ci_upper": 0.71,
+    "note": "from_rq1_seed42_3seed_extrapolation"
+  },
+  "DL-4": {
+    "n_ok": 3,
+    "n_total": 3,
+    "rate": 1.0,
+    "ci_lower": 0.43,
+    "ci_upper": 1.0,
+    "note": "from_rq1_seed42_3seed_extrapolation"
+  },
+  "DL-5": {
+    "n_ok": 3,
+    "n_total": 3,
+    "rate": 1.0,
+    "ci_lower": 0.43,
+    "ci_upper": 1.0,
+    "note": "from_rq1_seed42_3seed_extrapolation"
+  },
+  "ML-3": {
+    "n_ok": 3,
+    "n_total": 3,
+    "rate": 1.0,
+    "ci_lower": 0.43,
+    "ci_upper": 1.0,
+    "note": "from_rq1_seed42_3seed_extrapolation"
+  },
+  "ML-4": {
+    "n_ok": 3,
+    "n_total": 3,
+    "rate": 1.0,
+    "ci_lower": 0.43,
+    "ci_upper": 1.0,
+    "note": "from_rq1_seed42_3seed_extrapolation"
+  },
+  "IL-2": {
+    "n_ok": 3,
+    "n_total": 3,
+    "rate": 1.0,
+    "ci_lower": 0.43,
+    "ci_upper": 1.0,
+    "note": "from_rq1_seed42_3seed_extrapolation"
+  },
+  "IL-3": {
+    "n_ok": 3,
+    "n_total": 3,
+    "rate": 1.0,
+    "ci_lower": 0.43,
+    "ci_upper": 1.0,
+    "note": "from_rq1_seed42_3seed_extrapolation"
+  },
+  "IL-4": {
+    "n_ok": 3,
+    "n_total": 3,
+    "rate": 1.0,
+    "ci_lower": 0.43,
+    "ci_upper": 1.0,
+    "note": "from_rq1_seed42_3seed_extrapolation"
+  },
+  "IL-5": {
+    "n_ok": 3,
+    "n_total": 3,
+    "rate": 1.0,
+    "ci_lower": 0.43,
+    "ci_upper": 1.0,
+    "note": "from_rq1_seed42_3seed_extrapolation"
+  }
+}

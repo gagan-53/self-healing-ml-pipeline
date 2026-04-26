@@ -1,0 +1,110 @@
+{
+  "seed": 123,
+  "n_detected": 13,
+  "results": [
+    {
+      "ft": "DL-1",
+      "detected": true,
+      "detected_as": "DL-1",
+      "correct": true,
+      "rca_ok": true,
+      "rec": true
+    },
+    {
+      "ft": "DL-2",
+      "detected": true,
+      "detected_as": "DL-2",
+      "correct": true,
+      "rca_ok": true,
+      "rec": true
+    },
+    {
+      "ft": "DL-3",
+      "detected": true,
+      "detected_as": "DL-3",
+      "correct": true,
+      "rca_ok": true,
+      "rec": true
+    },
+    {
+      "ft": "DL-4",
+      "detected": true,
+      "detected_as": "DL-4",
+      "correct": true,
+      "rca_ok": true,
+      "rec": true
+    },
+    {
+      "ft": "DL-5",
+      "detected": true,
+      "detected_as": "DL-5",
+      "correct": true,
+      "rca_ok": true,
+      "rec": true
+    },
+    {
+      "ft": "ML-1",
+      "detected": true,
+      "detected_as": "ML-1",
+      "correct": true,
+      "rca_ok": false,
+      "rec": true
+    },
+    {
+      "ft": "ML-3",
+      "detected": true,
+      "detected_as": "ML-3",
+      "correct": true,
+      "rca_ok": false,
+      "rec": true
+    },
+    {
+      "ft": "ML-4",
+      "detected": true,
+      "detected_as": "ML-4",
+      "correct": true,
+      "rca_ok": false,
+      "rec": false
+    },
+    {
+      "ft": "IL-1",
+      "detected": true,
+      "detected_as": "IL-1",
+      "correct": true,
+      "rca_ok": false,
+      "rec": true
+    },
+    {
+      "ft": "IL-2",
+      "detected": true,
+      "detected_as": "IL-2",
+      "correct": true,
+      "rca_ok": false,
+      "rec": true
+    },
+    {
+      "ft": "IL-3",
+      "detected": true,
+      "detected_as": "IL-3",
+      "correct": true,
+      "rca_ok": false,
+      "rec": true
+    },
+    {
+      "ft": "IL-4",
+      "detected": true,
+      "detected_as": "DL-4",
+      "correct": false,
+      "rca_ok": false,
+      "rec": false
+    },
+    {
+      "ft": "IL-5",
+      "detected": true,
+      "detected_as": "IL-5",
+      "correct": true,
+      "rca_ok": false,
+      "rec": true
+    }
+  ]
+}

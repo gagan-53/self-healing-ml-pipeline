@@ -1,0 +1,77 @@
+{
+  "name": "sh-mlp",
+  "displayName": "SH-MLP Monitor",
+  "description": "Self-Healing ML Pipeline — real-time fault detection, RCA, and autonomous recovery inside VS Code",
+  "version": "1.0.0",
+  "publisher": "guardrails",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/guardrails/sh-mlp-vscode" },
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Machine Learning", "Other"],
+  "keywords": ["mlops", "pipeline", "monitoring", "fault-detection", "self-healing"],
+  "activationEvents": [
+    "onLanguage:python",
+    "workspaceContains:**/sh_mlp*.py",
+    "workspaceContains:**/pipeline*.py",
+    "onCommand:shmlp.startMonitor"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      { "command": "shmlp.startMonitor",    "title": "SH-MLP: Start Monitor" },
+      { "command": "shmlp.stopMonitor",     "title": "SH-MLP: Stop Monitor" },
+      { "command": "shmlp.showPanel",       "title": "SH-MLP: Show Panel" },
+      { "command": "shmlp.approveRecovery", "title": "SH-MLP: Approve Recovery" },
+      { "command": "shmlp.viewHistory",     "title": "SH-MLP: View Event History" },
+      { "command": "shmlp.configure",       "title": "SH-MLP: Configure Settings" }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        { "id": "shmlp-sidebar", "title": "SH-MLP Monitor", "icon": "$(pulse)" }
+      ]
+    },
+    "views": {
+      "shmlp-sidebar": [
+        { "id": "shmlp.healthView",  "name": "Pipeline Health",  "type": "webview" },
+        { "id": "shmlp.faultsView",  "name": "Active Faults",    "type": "tree" },
+        { "id": "shmlp.historyView", "name": "Event History",    "type": "tree" }
+      ]
+    },
+    "configuration": {
+      "title": "SH-MLP Monitor",
+      "properties": {
+        "shmlp.pythonPath":       { "type": "string",  "default": "", "description": "Path to Python executable (auto-detected if empty)" },
+        "shmlp.warmupCycles":     { "type": "number",  "default": 60, "description": "EMA baseline warmup cycles" },
+        "shmlp.f4MinRatio":       { "type": "number",  "default": 1.25, "description": "F4 cross-layer minimum magnitude gate" },
+        "shmlp.autoApprove":      { "type": "boolean", "default": false, "description": "Auto-approve all recovery actions" },
+        "shmlp.showInlineDiag":   { "type": "boolean", "default": true,  "description": "Show inline fault annotations in editor" },
+        "shmlp.notifyOnFault":    { "type": "boolean", "default": true,  "description": "Show notification toast on fault detection" },
+        "shmlp.pipelineGlobs":    {
+          "type": "array", "items": { "type": "string" },
+          "default": ["**/*pipeline*.py", "**/*train*.py", "**/*ingest*.py"],
+          "description": "Glob patterns to watch for pipeline files"
+        }
+      }
+    },
+    "menus": {
+      "editor/context": [
+        { "command": "shmlp.startMonitor", "when": "editorLangId == python", "group": "shmlp" }
+      ]
+    }
+  },
+  "scripts": {
+    "compile":    "tsc -p ./",
+    "watch":      "tsc -watch -p ./",
+    "package":    "vsce package",
+    "test":       "node ./out/test/runTest.js"
+  },
+  "dependencies": {
+    "vscode-jsonrpc": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/node":   "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "typescript":    "^5.3.0",
+    "@vscode/vsce":  "^2.22.0"
+  }
+}

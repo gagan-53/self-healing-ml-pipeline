@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
+
+# Node / VS Code extension
+phase5/extension/node_modules/
+phase5/extension/out/
+phase5/extension/*.vsix
+
+# macOS
+.DS_Store
+
+# Local results artifacts (kept — lightweight)
+phase4/results/phase4b_raw.json

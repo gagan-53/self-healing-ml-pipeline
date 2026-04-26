@@ -1,0 +1,209 @@
+{
+  "grid_results": [
+    {
+      "warmup_cycles": 30,
+      "f4_min_ratio": 1.0,
+      "fp_count": 96,
+      "fp_rate": 0.384,
+      "detection_count": 13,
+      "detection_rate": 0.9286,
+      "meets_fp_target": false
+    },
+    {
+      "warmup_cycles": 30,
+      "f4_min_ratio": 1.1,
+      "fp_count": 95,
+      "fp_rate": 0.38,
+      "detection_count": 13,
+      "detection_rate": 0.9286,
+      "meets_fp_target": false
+    },
+    {
+      "warmup_cycles": 30,
+      "f4_min_ratio": 1.25,
+      "fp_count": 95,
+      "fp_rate": 0.38,
+      "detection_count": 13,
+      "detection_rate": 0.9286,
+      "meets_fp_target": false
+    },
+    {
+      "warmup_cycles": 30,
+      "f4_min_ratio": 1.5,
+      "fp_count": 95,
+      "fp_rate": 0.38,
+      "detection_count": 13,
+      "detection_rate": 0.9286,
+      "meets_fp_target": false
+    },
+    {
+      "warmup_cycles": 30,
+      "f4_min_ratio": 2.0,
+      "fp_count": 95,
+      "fp_rate": 0.38,
+      "detection_count": 13,
+      "detection_rate": 0.9286,
+      "meets_fp_target": false
+    },
+    {
+      "warmup_cycles": 40,
+      "f4_min_ratio": 1.0,
+      "fp_count": 87,
+      "fp_rate": 0.348,
+      "detection_count": 13,
+      "detection_rate": 0.9286,
+      "meets_fp_target": false
+    },
+    {
+      "warmup_cycles": 40,
+      "f4_min_ratio": 1.1,
+      "fp_count": 86,
+      "fp_rate": 0.344,
+      "detection_count": 13,
+      "detection_rate": 0.9286,
+      "meets_fp_target": false
+    },
+    {
+      "warmup_cycles": 40,
+      "f4_min_ratio": 1.25,
+      "fp_count": 86,
+      "fp_rate": 0.344,
+      "detection_count": 13,
+      "detection_rate": 0.9286,
+      "meets_fp_target": false
+    },
+    {
+      "warmup_cycles": 40,
+      "f4_min_ratio": 1.5,
+      "fp_count": 86,
+      "fp_rate": 0.344,
+      "detection_count": 13,
+      "detection_rate": 0.9286,
+      "meets_fp_target": false
+    },
+    {
+      "warmup_cycles": 40,
+      "f4_min_ratio": 2.0,
+      "fp_count": 86,
+      "fp_rate": 0.344,
+      "detection_count": 13,
+      "detection_rate": 0.9286,
+      "meets_fp_target": false
+    },
+    {
+      "warmup_cycles": 50,
+      "f4_min_ratio": 1.0,
+      "fp_count": 89,
+      "fp_rate": 0.356,
+      "detection_count": 13,
+      "detection_rate": 0.9286,
+      "meets_fp_target": false
+    },
+    {
+      "warmup_cycles": 50,
+      "f4_min_ratio": 1.1,
+      "fp_count": 89,
+      "fp_rate": 0.356,
+      "detection_count": 13,
+      "detection_rate": 0.9286,
+      "meets_fp_target": false
+    },
+    {
+      "warmup_cycles": 50,
+      "f4_min_ratio": 1.25,
+      "fp_count": 89,
+      "fp_rate": 0.356,
+      "detection_count": 13,
+      "detection_rate": 0.9286,
+      "meets_fp_target": false
+    },
+    {
+      "warmup_cycles": 50,
+      "f4_min_ratio": 1.5,
+      "fp_count": 89,
+      "fp_rate": 0.356,
+      "detection_count": 13,
+      "detection_rate": 0.9286,
+      "meets_fp_target": false
+    },
+    {
+      "warmup_cycles": 50,
+      "f4_min_ratio": 2.0,
+      "fp_count": 89,
+      "fp_rate": 0.356,
+      "detection_count": 13,
+      "detection_rate": 0.9286,
+      "meets_fp_target": false
+    },
+    {
+      "warmup_cycles": 60,
+      "f4_min_ratio": 1.0,
+      "fp_count": 85,
+      "fp_rate": 0.34,
+      "detection_count": 13,
+      "detection_rate": 0.9286,
+      "meets_fp_target": false
+    },
+    {
+      "warmup_cycles": 60,
+      "f4_min_ratio": 1.1,
+      "fp_count": 85,
+      "fp_rate": 0.34,
+      "detection_count": 13,
+      "detection_rate": 0.9286,
+      "meets_fp_target": false
+    },
+    {
+      "warmup_cycles": 60,
+      "f4_min_ratio": 1.25,
+      "fp_count": 85,
+      "fp_rate": 0.34,
+      "detection_count": 13,
+      "detection_rate": 0.9286,
+      "meets_fp_target": false
+    },
+    {
+      "warmup_cycles": 60,
+      "f4_min_ratio": 1.5,
+      "fp_count": 85,
+      "fp_rate": 0.34,
+      "detection_count": 13,
+      "detection_rate": 0.9286,
+      "meets_fp_target": false
+    },
+    {
+      "warmup_cycles": 60,
+      "f4_min_ratio": 2.0,
+      "fp_count": 85,
+      "fp_rate": 0.34,
+      "detection_count": 13,
+      "detection_rate": 0.9286,
+      "meets_fp_target": false
+    }
+  ],
+  "optimal": {
+    "warmup_cycles": 60,
+    "f4_min_ratio": 1.0,
+    "fp_count": 85,
+    "fp_rate": 0.34,
+    "detection_count": 13,
+    "detection_rate": 0.9286,
+    "meets_fp_target": false
+  },
+  "all_fault_types": [
+    "DL-1",
+    "DL-2",
+    "DL-3",
+    "DL-4",
+    "DL-5",
+    "ML-1",
+    "ML-2",
+    "ML-3",
+    "ML-4",
+    "IL-1",
+    "IL-2",
+    "IL-3",
+    "IL-4",
+    "IL-5"
+  ]
+}

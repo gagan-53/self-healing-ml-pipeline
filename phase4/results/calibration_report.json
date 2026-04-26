@@ -1,0 +1,323 @@
+{
+  "phase": "4A_calibration",
+  "timestamp": "2026-04-24T08:18:15.808239",
+  "config": {
+    "warmup_cycles": 60,
+    "f4_min_ratio": 1.0,
+    "clean_run_cycles": 50,
+    "magnitude_factor": 1.25,
+    "seed": 42
+  },
+  "clean_run": {
+    "cycles": 50,
+    "fp_count": 60,
+    "fp_rate": 0.24,
+    "meets_target": false,
+    "fp_events": [
+      {
+        "stage": "ingestion",
+        "type": "DL-1",
+        "rule": "F5"
+      },
+      {
+        "stage": "preprocessing",
+        "type": "DL-1",
+        "rule": "F2"
+      },
+      {
+        "stage": "evaluation",
+        "type": "DL-1",
+        "rule": "F2"
+      },
+      {
+        "stage": "training",
+        "type": "DL-1",
+        "rule": "F2"
+      },
+      {
+        "stage": "feature_eng",
+        "type": "DL-1",
+        "rule": "F2"
+      },
+      {
+        "stage": "training",
+        "type": "DL-1",
+        "rule": "F2"
+      },
+      {
+        "stage": "feature_eng",
+        "type": "DL-1",
+        "rule": "F2"
+      },
+      {
+        "stage": "ingestion",
+        "type": "DL-1",
+        "rule": "F2"
+      },
+      {
+        "stage": "feature_eng",
+        "type": "DL-1",
+        "rule": "F2"
+      },
+      {
+        "stage": "training",
+        "type": "DL-1",
+        "rule": "F2"
+      }
+    ]
+  },
+  "fault_injection": {
+    "total": 14,
+    "detected": 13,
+    "detection_rate": 0.929,
+    "correct_type": 7,
+    "type_precision": 0.538,
+    "recovered": 12,
+    "recovery_rate": 0.923
+  },
+  "phase4a_acceptance": {
+    "detection_rate_ge_90pct": true,
+    "fp_rate_le_5pct": false,
+    "all_14_types_attempted": true
+  },
+  "per_fault_results": [
+    {
+      "fault_type": "DL-1",
+      "stage": "ingestion",
+      "detected": true,
+      "detected_as": "DL-1",
+      "correct_type": true,
+      "n_cycles_needed": 3,
+      "fusion_rule": "F2",
+      "severity": "HIGH",
+      "rca_confidence": 0.0,
+      "rca_primary_cause": "ingestion",
+      "recovery_strategy": "S-DL1-A",
+      "recovery_success": false,
+      "decision_mode": "ESCALATE",
+      "latency_ms": 11.51,
+      "note": "multi-cycle"
+    },
+    {
+      "fault_type": "DL-2",
+      "stage": "ingestion",
+      "detected": true,
+      "detected_as": "DL-2",
+      "correct_type": true,
+      "n_cycles_needed": 1,
+      "fusion_rule": "F1",
+      "severity": "CRITICAL",
+      "rca_confidence": 0.0,
+      "rca_primary_cause": "ingestion",
+      "recovery_strategy": "S-DL1-B",
+      "recovery_success": true,
+      "decision_mode": "ESCALATE",
+      "latency_ms": 15.6,
+      "note": ""
+    },
+    {
+      "fault_type": "DL-3",
+      "stage": "training",
+      "detected": true,
+      "detected_as": "DL-1",
+      "correct_type": false,
+      "n_cycles_needed": 6,
+      "fusion_rule": "F2",
+      "severity": "HIGH",
+      "rca_confidence": 0.336,
+      "rca_primary_cause": "ingestion",
+      "recovery_strategy": "S-DL1-B",
+      "recovery_success": true,
+      "decision_mode": "ESCALATE",
+      "latency_ms": 5.17,
+      "note": "multi-cycle"
+    },
+    {
+      "fault_type": "DL-4",
+      "stage": "ingestion",
+      "detected": true,
+      "detected_as": "DL-4",
+      "correct_type": true,
+      "n_cycles_needed": 1,
+      "fusion_rule": "F1",
+      "severity": "CRITICAL",
+      "rca_confidence": 0.0,
+      "rca_primary_cause": "ingestion",
+      "recovery_strategy": "S-DL1-B",
+      "recovery_success": true,
+      "decision_mode": "ESCALATE",
+      "latency_ms": 6.05,
+      "note": ""
+    },
+    {
+      "fault_type": "DL-5",
+      "stage": "ingestion",
+      "detected": true,
+      "detected_as": "DL-5",
+      "correct_type": true,
+      "n_cycles_needed": 6,
+      "fusion_rule": "F2",
+      "severity": "HIGH",
+      "rca_confidence": 0.0,
+      "rca_primary_cause": "ingestion",
+      "recovery_strategy": "S-DL1-B",
+      "recovery_success": true,
+      "decision_mode": "ESCALATE",
+      "latency_ms": 24.12,
+      "note": "multi-cycle"
+    },
+    {
+      "fault_type": "ML-1",
+      "stage": "training",
+      "detected": true,
+      "detected_as": "DL-1",
+      "correct_type": false,
+      "n_cycles_needed": 3,
+      "fusion_rule": "F4",
+      "severity": "HIGH",
+      "rca_confidence": 0.336,
+      "rca_primary_cause": "preprocessing",
+      "recovery_strategy": "S-DL1-B",
+      "recovery_success": true,
+      "decision_mode": "ESCALATE",
+      "latency_ms": 0.75,
+      "note": "multi-cycle"
+    },
+    {
+      "fault_type": "ML-2",
+      "stage": "training",
+      "detected": false,
+      "detected_as": "NONE",
+      "correct_type": false,
+      "n_cycles_needed": 0,
+      "fusion_rule": null,
+      "severity": null,
+      "rca_confidence": null,
+      "rca_primary_cause": null,
+      "recovery_strategy": null,
+      "recovery_success": null,
+      "decision_mode": null,
+      "latency_ms": 0.0,
+      "note": ""
+    },
+    {
+      "fault_type": "ML-3",
+      "stage": "training",
+      "detected": true,
+      "detected_as": "ML-3",
+      "correct_type": true,
+      "n_cycles_needed": 3,
+      "fusion_rule": "F2",
+      "severity": "HIGH",
+      "rca_confidence": 0.335,
+      "rca_primary_cause": "ingestion",
+      "recovery_strategy": "S-ML3-A",
+      "recovery_success": true,
+      "decision_mode": "ESCALATE",
+      "latency_ms": 0.97,
+      "note": "multi-cycle"
+    },
+    {
+      "fault_type": "ML-4",
+      "stage": "training",
+      "detected": true,
+      "detected_as": "DL-1",
+      "correct_type": false,
+      "n_cycles_needed": 6,
+      "fusion_rule": "F4",
+      "severity": "HIGH",
+      "rca_confidence": 0.336,
+      "rca_primary_cause": "preprocessing",
+      "recovery_strategy": "S-DL1-B",
+      "recovery_success": true,
+      "decision_mode": "ESCALATE",
+      "latency_ms": 0.55,
+      "note": "multi-cycle"
+    },
+    {
+      "fault_type": "IL-1",
+      "stage": "preprocessing",
+      "detected": true,
+      "detected_as": "DL-1",
+      "correct_type": false,
+      "n_cycles_needed": 3,
+      "fusion_rule": "F4",
+      "severity": "HIGH",
+      "rca_confidence": 0.99,
+      "rca_primary_cause": "ingestion",
+      "recovery_strategy": "S-DL1-B",
+      "recovery_success": true,
+      "decision_mode": "AUTONOMOUS",
+      "latency_ms": 103.5,
+      "note": "multi-cycle"
+    },
+    {
+      "fault_type": "IL-2",
+      "stage": "preprocessing",
+      "detected": true,
+      "detected_as": "IL-2",
+      "correct_type": true,
+      "n_cycles_needed": 3,
+      "fusion_rule": "F2",
+      "severity": "HIGH",
+      "rca_confidence": 0.99,
+      "rca_primary_cause": "ingestion",
+      "recovery_strategy": "S-IL2-A",
+      "recovery_success": true,
+      "decision_mode": "SUPERVISED",
+      "latency_ms": 16.25,
+      "note": "multi-cycle"
+    },
+    {
+      "fault_type": "IL-3",
+      "stage": "preprocessing",
+      "detected": true,
+      "detected_as": "DL-1",
+      "correct_type": false,
+      "n_cycles_needed": 3,
+      "fusion_rule": "F4",
+      "severity": "HIGH",
+      "rca_confidence": 0.99,
+      "rca_primary_cause": "ingestion",
+      "recovery_strategy": "S-DL1-B",
+      "recovery_success": true,
+      "decision_mode": "AUTONOMOUS",
+      "latency_ms": 0.28,
+      "note": "multi-cycle"
+    },
+    {
+      "fault_type": "IL-4",
+      "stage": "preprocessing",
+      "detected": true,
+      "detected_as": "DL-1",
+      "correct_type": false,
+      "n_cycles_needed": 3,
+      "fusion_rule": "F4",
+      "severity": "HIGH",
+      "rca_confidence": 0.99,
+      "rca_primary_cause": "ingestion",
+      "recovery_strategy": "S-DL1-B",
+      "recovery_success": true,
+      "decision_mode": "AUTONOMOUS",
+      "latency_ms": 0.41,
+      "note": "multi-cycle"
+    },
+    {
+      "fault_type": "IL-5",
+      "stage": "preprocessing",
+      "detected": true,
+      "detected_as": "IL-5",
+      "correct_type": true,
+      "n_cycles_needed": 6,
+      "fusion_rule": "F2",
+      "severity": "HIGH",
+      "rca_confidence": 0.99,
+      "rca_primary_cause": "ingestion",
+      "recovery_strategy": "S-IL5-A",
+      "recovery_success": true,
+      "decision_mode": "SUPERVISED",
+      "latency_ms": 3.85,
+      "note": "multi-cycle"
+    }
+  ]
+}

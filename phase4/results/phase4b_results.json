@@ -1,0 +1,19 @@
+{
+  "phase": "4B",
+  "version": "v2",
+  "timestamp": "2026-04-24T08:42:18.509304",
+  "config": {
+    "warmup": 60,
+    "f4": 1.25,
+    "n_samples": 300,
+    "cooldown": 5,
+    "state_reset": true
+  },
+  "rq1": {
+    "rq": "RQ1",
+    "variant": "full",
+    "n_trials": 39,
+    "point_estimate": 1.0,
+    "ci_lower": 0.9103,
+    "ci_upper": 1,
+    "meets_target": 
