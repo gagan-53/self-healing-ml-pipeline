@@ -39,7 +39,6 @@ sh_mlp/        # Core library: detection, RCA, recovery, observer
 phase4/        # Calibration + RQ1–RQ4 experiment harness
 phase5/        # VS Code extension (TypeScript) + Python sidecar
 phase6/        # 17-prompt LLM library (detection / RCA / recovery / meta)
-paper/         # IEEE paper (LaTeX + PDF)
 ```
 
 ## VS Code Extension

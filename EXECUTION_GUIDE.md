@@ -13,9 +13,8 @@
 5. [Phase 4B: Formal Experiments](#5-phase-4b-formal-experiments)
 6. [Phase 5: VS Code Extension](#6-phase-5-vs-code-extension)
 7. [Phase 6: Prompt Library](#7-phase-6-prompt-library)
-8. [Phase 7: Paper and Submission](#8-phase-7-paper-and-submission)
-9. [Publishing Steps](#9-publishing-steps)
-10. [Troubleshooting](#10-troubleshooting)
+8. [Publishing Steps](#8-publishing-steps)
+9. [Troubleshooting](#9-troubleshooting)
 
 ---
 
@@ -29,7 +28,6 @@
 | Node.js | 18.0 | `node --version` |
 | npm | 9.0 | `npm --version` |
 | Git | 2.38 | `git --version` |
-| LaTeX (optional) | TeX Live 2023 | `pdflatex --version` |
 
 ### Python environment setup
 
@@ -134,9 +132,6 @@ SH_MLP_Complete/
 │   ├── prompt_runner.py         # Anthropic SDK wrapper + template filling
 │   └── evaluation/
 │       └── eval_harness.py      # Ground-truth eval with Phase 4B cases
-│
-├── paper/
-│   └── SH_MLP_IEEE_Paper.tex   # Full IEEE LaTeX paper (553 lines)
 │
 ├── setup.py                     # pip install -e . entry point
 ├── requirements.txt             # All Python dependencies
@@ -430,38 +425,18 @@ Target: pass rate > 80% on Layer 1 detection prompts.
 
 ---
 
-## 8. Phase 7: Paper and Submission
+## 8. Publishing Steps
 
-### Step 1: Compile the LaTeX paper
+### Pre-submission checklist
 
-```bash
-cd SH_MLP_Complete/paper
-
-# Install IEEEtran (requires texlive-publishers)
-# Ubuntu/Debian:
-sudo apt-get install texlive-publishers texlive-science
-
-# macOS (MacTeX):
-# tlmgr install IEEEtran pgf
-
-pdflatex SH_MLP_IEEE_Paper.tex
-pdflatex SH_MLP_IEEE_Paper.tex   # Run twice for cross-references
-bibtex SH_MLP_IEEE_Paper         # If using separate .bib file
-pdflatex SH_MLP_IEEE_Paper.tex   # Final pass
-```
-
-Output: `SH_MLP_IEEE_Paper.pdf` — ready for submission.
-
-### Step 2: Pre-submission checklist
-
-Run this before every submission attempt:
+Run this before publishing a release:
 
 ```bash
 python3 -c "
 import json, sys
 
 # Load results
-r = json.load(open('../phase4/results/phase4b_results.json'))
+r = json.load(open('phase4/results/phase4b_results.json'))
 checks = [
     ('RQ1 >= 90%', r['rq1']['rate'] >= 0.90),
     ('RQ1 CI lower >= 80%', r['rq1']['ci_lower'] >= 0.80),
@@ -480,33 +455,7 @@ sys.exit(0 if all_pass else 1)
 
 ---
 
-## 9. Publishing Steps
-
-### 9.1 arXiv preprint (do this before conference submission)
-
-**Why:** Establishes a priority timestamp before the conference review period.
-
-**Steps:**
-
-1. Go to https://arxiv.org/submit
-2. Create an account (or log in)
-3. Click **Start New Submission**
-4. Set primary category: **cs.LG** (Machine Learning)
-5. Set cross-list category: **cs.SE** (Software Engineering)
-6. Upload `paper/SH_MLP_IEEE_Paper.tex` (or the compiled PDF)
-7. If uploading source: also upload any `.sty` files and figures
-8. Fill in metadata:
-   - **Title:** SH-MLP: Autonomous Fault Detection, Root Cause Analysis, and Recovery in Machine Learning Pipelines
-   - **Abstract:** (copy from paper)
-   - **Comments:** Submitted to MLSys 2026. Code available at https://github.com/[your-username]/sh-mlp
-9. Click **Submit** → review the compiled preview
-10. Confirm submission → note the arXiv ID (format: 2506.XXXXX)
-
-**After submission:** Update the paper's `\thanks` or footnote with the arXiv ID before final camera-ready.
-
----
-
-### 9.2 MLSys 2026 conference submission
+### 8.1 MLSys 2026 conference submission
 
 **Venue:** Conference on Machine Learning Systems (https://mlsys.org)
 **Typical deadline:** October (check mlsys.org for confirmed dates)
@@ -542,7 +491,7 @@ sys.exit(0 if all_pass else 1)
 
 ---
 
-### 9.3 VS Code Marketplace submission
+### 8.2 VS Code Marketplace submission
 
 **Prerequisites:** VSIX bundle built (Step 6.4 above)
 
@@ -602,7 +551,7 @@ code --install-extension guardrails.sh-mlp
 
 ---
 
-### 9.4 GitHub repository publishing
+### 8.3 GitHub repository publishing
 
 **Steps:**
 
@@ -641,7 +590,7 @@ git push origin v1.0.0
 
 ---
 
-### 9.5 PyPI package publishing (optional)
+### 8.4 PyPI package publishing (optional)
 
 ```bash
 cd SH_MLP_Complete
@@ -663,7 +612,7 @@ pip install sh-mlp
 
 ---
 
-## 10. Troubleshooting
+## 9. Troubleshooting
 
 ### `ImportError: No module named 'sh_mlp'`
 
@@ -692,19 +641,6 @@ cd phase5/extension
 node --version  # Must be >= 18
 npm install     # Re-install dependencies
 npm run compile 2>&1 | head -20
-```
-
-### LaTeX compilation fails — `IEEEtran.cls not found`
-
-```bash
-# Ubuntu/Debian
-sudo apt-get install texlive-publishers
-
-# macOS (requires MacTeX)
-sudo tlmgr install IEEEtran
-
-# Verify
-kpsewhich IEEEtran.cls  # Should print a path
 ```
 
 ### Phase 4B runner hangs on warmup
